@@ -123,6 +123,74 @@
 #         return x
 #     return y
 # print(my_max(3,4))
+#4.1
+# def print_list_elements(l):
+#     print(l)
+# print_list_elements([1,2,3,4])
+#
+# def print_list_elements(l):
+#     print(l[::-1])
+# print_list_elements([1,2,3,4])
+
+#4.2
+# a=[1,2,3,4,5]
+# b=a
+# b[1]=6
+# print(a,b)
+# c=a[:]
+# c[2]=9
+# print(a,c)
+
+#4.3
+# a = [[1]] * 3
+# print(a)
+
+# b = [[2] for _ in range(3)]
+# print(b)
+
+# def func_list_index(l,i):
+#     l[i] = 0
+#     return l
+# print(func_list_index([1,2,3,4,5],1))
+
+# def func_sublists(l):
+#      x = []
+#      for i in l:
+#          for j in i:
+#              x.append(j)
+#      return x
+# print(func_sublists([[1,3],[3,6]]))
+
+# import re
+# def func_longest_word(text):
+#      cleaned_text = re.sub(r'[^\w\s]', '', text)
+#      x = cleaned_text.split(" ")
+#      longest = ''
+#      for i in x:
+#         if len(i) > len(longest):
+#             longest = i
+#      return longest
+# print(func_longest_word("“Hello, how was the football match earlier today???"))
+
+
+# def func_pivots(x,l):
+#      empty_list = []
+#      for i in l:
+#          if i < x:
+#             empty_list.append(i)
+#      for i in empty_list:
+#          for j in l:
+#              if i==j:
+#                  l.remove(j)
+#      return empty_list + [x] + l
+# print(func_pivots(3, [6, 4, 1, 7]))
+
+
+a = 10
+b = 5
+a,b = b,a
+print(a,b)
+
 
 
 
